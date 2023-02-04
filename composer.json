@@ -1,0 +1,15 @@
+{
+    "name": "bm/php-blog",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "MihailAlexBuk",
+            "email": "mihail.alexbuk@gmail.com"
+        }
+    ],
+    "require": {}
+}
