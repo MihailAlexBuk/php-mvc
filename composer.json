@@ -1,5 +1,5 @@
 {
-    "name": "bm/php-mvc",
+    "name": "bm/php-blog",
     "autoload": {
         "psr-4": {
             "app\\": "./"
@@ -11,5 +11,7 @@
             "email": "mihail.alexbuk@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-json": "*"
+    }
 }

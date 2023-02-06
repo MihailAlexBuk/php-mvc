@@ -11,7 +11,7 @@ class AuthController extends Controller
     public function login()
     {
         $this->setLayout('auth');
-        return $this->render('login');
+        return $this->render('auth/login');
     }
 
     public function register(Request $request)
@@ -26,7 +26,6 @@ class AuthController extends Controller
             {
                 return 'Success';
             }
-            var_dump($registerModel->errors);
 
             return $this->render('register', [
                 'model' => $registerModel
