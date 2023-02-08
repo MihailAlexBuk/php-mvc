@@ -23,15 +23,14 @@ class Database
         $appliedMigrations = $this->getApplyMigrations();
 
         $newMigrations = [];
-        $files = scandir(Application::$ROOT_DIR.'/migrations');
+        $files = scandir(Application::$ROOT_DIR . '/migrations');
         $toApplyMigrations = array_diff($files, $appliedMigrations);
-        foreach ($toApplyMigrations as $migration)
-        {
-            if ($migration === '.' || $migration === '..'){
+        foreach ($toApplyMigrations as $migration) {
+            if ($migration === '.' || $migration === '..') {
                 continue;
             }
 
-            require_once Application::$ROOT_DIR.'/migrations/'.$migration;
+            require_once Application::$ROOT_DIR . '/migrations/' . $migration;
             $className = pathinfo($migration, PATHINFO_FILENAME);
             $instance = new $className();
             $this->log("Applying migration $migration");
@@ -39,9 +38,9 @@ class Database
             $this->log("Applied migration $migration");
             $newMigrations[] = $migration;
         }
-        if(!empty($newMigrations)){
+        if (!empty($newMigrations)) {
             $this->saveMigrations($newMigrations);
-        }else{
+        } else {
             $this->log("All migrations are applied");
         }
     }
@@ -72,6 +71,11 @@ class Database
          ");
 
         $statement->execute();
+    }
+
+    public function prepare($sql)
+    {
+        return $this->pdo->prepare($sql);
     }
 
     protected function log($message)
