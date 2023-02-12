@@ -1,5 +1,6 @@
 <?php
 /** @var $model \app\models\User */
+$this->title = "Sign in";
 ?>
 
 <h1>Sign in</h1>

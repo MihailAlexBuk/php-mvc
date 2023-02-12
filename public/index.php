@@ -1,7 +1,7 @@
 <?php
 
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
+ini_set('display_errors', 1);
+error_reporting(LIBXML_ERR_FATAL);
 
 use app\core\Application;
 
@@ -30,6 +30,7 @@ $app->router->post('/login', [\app\controllers\AuthController::class, 'login']);
 $app->router->get('/register', [\app\controllers\AuthController::class, 'register']);
 $app->router->post('/register', [\app\controllers\AuthController::class, 'register']);
 $app->router->get('/logout', [\app\controllers\AuthController::class, 'logout']);
+$app->router->get('/profile', [\app\controllers\AuthController::class, 'profile']);
 
 
 $app->run();

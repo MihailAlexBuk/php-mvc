@@ -1,5 +1,6 @@
 <?php
 /** @var $model \app\models\User */
+$this->title = "Sign Up";
 ?>
 
 <h1>Create an account</h1>
