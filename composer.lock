@@ -4,8 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2aac4ffb56453984cf232b3d8725199e",
+    "content-hash": "0e65936d5d35b078183ead098192792b",
     "packages": [
+        {
+            "name": "boomee/php-mvc-core",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MihailAlexBuk/php-mvc-core.git",
+                "reference": "b8cd315f3e2cffe76cca645f85f8f29d7d3f12dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MihailAlexBuk/php-mvc-core/zipball/b8cd315f3e2cffe76cca645f85f8f29d7d3f12dd",
+                "reference": "b8cd315f3e2cffe76cca645f85f8f29d7d3f12dd",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "boomee\\phpmvc\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Mihail",
+                    "email": "mihail.alexbuk@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/MihailAlexBuk/php-mvc-core/issues",
+                "source": "https://github.com/MihailAlexBuk/php-mvc-core/tree/v1.0.3"
+            },
+            "time": "2023-02-13T11:17:34+00:00"
+        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.1.0",

@@ -3,7 +3,7 @@
 ini_set('display_errors', 1);
 error_reporting(LIBXML_ERR_FATAL);
 
-use app\core\Application;
+use boomee\phpmvc\Application;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 $dotenv = \Dotenv\Dotenv::createImmutable(dirname(__DIR__));
@@ -23,7 +23,7 @@ $app = new Application(dirname(__DIR__), $config);
 
 $app->router->get('/', [\app\controllers\SiteController::class, 'home']);
 $app->router->get('/contact', [\app\controllers\SiteController::class, 'contact']);
-$app->router->post('/contact', [\app\controllers\SiteController::class, 'handleContact']);
+$app->router->post('/contact', [\app\controllers\SiteController::class, 'contact']);
 
 $app->router->get('/login', [\app\controllers\AuthController::class, 'login']);
 $app->router->post('/login', [\app\controllers\AuthController::class, 'login']);

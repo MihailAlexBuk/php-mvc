@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use app\core\UserModel;
+use boomee\phpmvc\UserModel;
 
 class User extends UserModel
 {

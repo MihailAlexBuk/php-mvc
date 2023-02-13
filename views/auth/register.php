@@ -5,7 +5,7 @@ $this->title = "Sign Up";
 
 <h1>Create an account</h1>
 
-<?php $form = \app\core\form\Form::begin('', 'post') ?>
+<?php $form = \boomee\phpmvc\form\Form::begin('', 'post') ?>
     <div class="row">
         <div class="col">
             <?php echo $form->field($model, 'firstname') ?>
@@ -18,6 +18,6 @@ $this->title = "Sign Up";
     <?php echo $form->field($model, 'password')->passwordField() ?>
     <?php echo $form->field($model, 'confirmPassword')->passwordField() ?>
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
-<?php $form = \app\core\form\Form::end() ?>
+<?php $form = \boomee\phpmvc\form\Form::end() ?>
 
 

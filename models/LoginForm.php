@@ -4,8 +4,8 @@
 namespace app\models;
 
 
-use app\core\Application;
-use app\core\Model;
+use boomee\phpmvc\Application;
+use boomee\phpmvc\Model;
 
 class LoginForm extends Model
 {

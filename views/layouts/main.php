@@ -1,5 +1,5 @@
 <?php
-use \app\core\Application;
+use \boomee\phpmvc\Application;
 
 ?>
 <!doctype html>
